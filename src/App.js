@@ -121,6 +121,10 @@ class App extends Component {
         body.style.background = "url('https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/ca_0126NID_Thunderstorm_Melbourne_online.jpg?itok=yE71nMVM')";
         body.style.backgroundSize = 'cover';
         body.style.color = 'white';
+    } else if (status === 'Mist') {
+        body.style.background = "url('https://i.ytimg.com/vi/nQ2L6_sTul8/maxresdefault.jpg')";
+        body.style.backgroundSize = 'cover';
+        body.style.color = 'white';
     } else {
         body.style.background = 'none';
         body.style.color = 'black';
