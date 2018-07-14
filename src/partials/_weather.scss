@@ -1,0 +1,33 @@
+#weather-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#weather {
+    font-size: 1.2em; 
+
+    #temp {
+        display: flex;
+        align-items: center;
+
+        #curr {
+            font-size: 4em;
+        }
+
+        #lowhigh {
+            display:flex;
+            flex-direction: column;
+            margin-left: 10%;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    p {
+        margin: 3%;
+        white-space: nowrap;
+    }
+}

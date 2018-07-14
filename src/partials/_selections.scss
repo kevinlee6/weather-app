@@ -1,0 +1,30 @@
+#selections {
+    display: flex;
+    align-items: center;
+
+    select {
+        font-size: 1em;
+    }
+
+    #form {
+        white-space: nowrap;
+        input {
+            font-size: 1em;
+            margin: 10px;
+            padding: 1%;
+        }
+
+        #get-weather-btn {
+            font-size: 1em;
+            border-radius: 20px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                background: #0f0;
+            }
+        }
+    }
+}

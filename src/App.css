@@ -1,0 +1,211 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header #title {
+  white-space: nowrap;
+  margin-right: 2%;
+  font-size: 2.5em;
+}
+
+header #unit {
+  white-space: nowrap;
+  margin-left: 2%;
+}
+
+header #unit button {
+  opacity: 0.5;
+  background: #aaa;
+  padding: 8%;
+  font-size: 0.8em;
+}
+
+header #unit button:hover {
+  opacity: 1;
+  background: #fff;
+}
+
+header #unit button:focus {
+  outline: none;
+}
+
+header #unit .active {
+  opacity: 1;
+  background: #0f0;
+  font-weight: 900;
+}
+
+header #unit .active:hover {
+  background: #0f0;
+}
+
+#selections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#selections select {
+  font-size: 1em;
+}
+
+#selections #form {
+  white-space: nowrap;
+}
+
+#selections #form input {
+  font-size: 1em;
+  margin: 10px;
+  padding: 1%;
+}
+
+#selections #form #get-weather-btn {
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+#selections #form #get-weather-btn:focus {
+  outline: none;
+}
+
+#selections #form #get-weather-btn:hover {
+  background: #0f0;
+}
+
+#weather-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3%;
+}
+
+#weather {
+  font-size: 1.2em;
+}
+
+#weather #temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#weather #temp #curr {
+  font-size: 4em;
+}
+
+#weather #temp #lowhigh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+}
+
+#weather #temp #lowhigh p {
+  margin: 0;
+}
+
+#weather p {
+  margin: 3%;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header #unit {
+    margin-bottom: 4%;
+  }
+  #selections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #selections #form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #selections #form #get-weather-btn {
+    width: 30%;
+    margin-top: 3%;
+  }
+  #weather-container {
+    margin-top: 5%;
+  }
+  #weather-container #weather #temp #curr {
+    font-size: 2.5em;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(blue), to(lightblue));
+  background: linear-gradient(blue, lightblue);
+  color: white;
+}
+
+#content {
+  background-color: rgba(123, 123, 123, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 5%;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,29 @@
+@import './partials/header';
+@import './partials/selections';
+@import './partials/weather';
+@import './partials/mediaqueries';
+
+.hidden {
+    display: none;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(blue, lightblue);
+    color: white;
+}
+
+#content {
+    background-color: rgba(123,123,123,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5%;
+}
