@@ -106,21 +106,25 @@ class App extends Component {
       // console.log(data);
 
       if (status === 'Clear') {
-          body.style.background = "url('https://extras.mnginteractive.com/live/media/site47/2018/0427/20180427_060929_SunnyPublic.jpg')";
-          body.style.backgroundSize = 'cover';
-          body.style.color = 'white';
-      } else if (status === 'Rain' || status === 'Thunderstorm') {
-          body.style.background = "url('https://52.24.98.51/wp-content/uploads/2017/03/rain.jpg')";
-          body.style.backgroundSize = 'cover';
-          body.style.color = 'white';
-      } else if (status === 'Clouds') {
-          body.style.background = "url('https://jooinn.com/images/cloudy-72.jpg')";
-          body.style.backgroundSize = 'cover';
-          body.style.color = 'white';
-      } else {
-          body.style.background = 'none';
-          body.style.color = 'black';
-      }
+        body.style.background = "url('https://extras.mnginteractive.com/live/media/site47/2018/0427/20180427_060929_SunnyPublic.jpg')";
+        body.style.backgroundSize = 'cover';
+        body.style.color = 'white';
+    } else if (status === 'Rain'){
+        body.style.background = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRln6CxDtrOyWkUyU4lVsoSUvYQCdA3t8xdxb21vYZUyWG3NmFE8g')";
+        body.style.backgroundSize = 'cover';
+        body.style.color = 'white';
+    } else if (status === 'Clouds') {
+        body.style.background = "url('https://jooinn.com/images/cloudy-72.jpg')";
+        body.style.backgroundSize = 'cover';
+        body.style.color = 'white';
+    } else if (status === 'Thunderstorm') {
+        body.style.background = "url('https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/ca_0126NID_Thunderstorm_Melbourne_online.jpg?itok=yE71nMVM')";
+        body.style.backgroundSize = 'cover';
+        body.style.color = 'white';
+    } else {
+        body.style.background = 'none';
+        body.style.color = 'black';
+    }
 
       this.setState({
         city: data.name,
