@@ -24,7 +24,7 @@ header #unit {
 header #unit button {
   opacity: 0.5;
   background: #aaa;
-  padding: 8%;
+  padding: 10px;
   font-size: 0.8em;
 }
 
