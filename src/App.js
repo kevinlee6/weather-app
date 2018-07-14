@@ -94,9 +94,9 @@ class App extends Component {
     } 
 
     if (this.state.select === 'city') {
-      url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=${unit}`;
+      url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=${unit}`;
     } else if (this.state.select === 'zip') {
-      url = `http://api.openweathermap.org/data/2.5/weather?q=${zip},${country}&appid=${API_KEY}&units=${unit}`;
+      url = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${country}&appid=${API_KEY}&units=${unit}`;
     }
 
     axios.get(url).then((response) => {
@@ -106,11 +106,11 @@ class App extends Component {
       // console.log(data);
 
       if (status === 'Clear') {
-          body.style.background = "url('http://extras.mnginteractive.com/live/media/site47/2018/0427/20180427_060929_SunnyPublic.jpg')";
+          body.style.background = "url('https://extras.mnginteractive.com/live/media/site47/2018/0427/20180427_060929_SunnyPublic.jpg')";
           body.style.backgroundSize = 'cover';
           body.style.color = 'white';
       } else if (status === 'Rain' || status === 'Thunderstorm') {
-          body.style.background = "url('http://52.24.98.51/wp-content/uploads/2017/03/rain.jpg')";
+          body.style.background = "url('https://52.24.98.51/wp-content/uploads/2017/03/rain.jpg')";
           body.style.backgroundSize = 'cover';
           body.style.color = 'white';
       } else if (status === 'Clouds') {
