@@ -110,7 +110,7 @@ class App extends Component {
         body.style.backgroundSize = 'cover';
         body.style.color = 'white';
     } else if (status === 'Rain'){
-        body.style.background = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRln6CxDtrOyWkUyU4lVsoSUvYQCdA3t8xdxb21vYZUyWG3NmFE8g')";
+        body.style.background = "url('https://i.ytimg.com/vi/J5OSRpRyl6g/maxresdefault.jpg')";
         body.style.backgroundSize = 'cover';
         body.style.color = 'white';
     } else if (status === 'Clouds') {
