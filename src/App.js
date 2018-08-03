@@ -6,6 +6,7 @@ import Select from './components/Select';
 import Form from './components/Form';
 import Weather from './components/Weather';
 import './App.css';
+import apiConfig from './api-keys'
 
 class App extends Component {
   state = {
@@ -77,7 +78,7 @@ class App extends Component {
 
   getWeather = e => {
     e.preventDefault();
-    const API_KEY = '640ae4a3a93b1f787afedf64a06a972f',
+    const API_KEY = apiConfig.weather,
           zip = e.target.zip.value,
           city = e.target.city.value,
           metric = document.getElementById('metric');
