@@ -6,7 +6,7 @@ import Select from './components/Select';
 import Form from './components/Form';
 import Weather from './components/Weather';
 import './App.css';
-import apiConfig from './api-keys'
+require('dotenv').config();
 
 class App extends Component {
   state = {
@@ -78,7 +78,7 @@ class App extends Component {
 
   getWeather = e => {
     e.preventDefault();
-    const API_KEY = apiConfig.weather,
+    const API_KEY = process.env.REACT_APP_WEATHER_API_KEY,
           zip = e.target.zip.value,
           city = e.target.city.value,
           metric = document.getElementById('metric');
