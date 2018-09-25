@@ -1,6 +1,6 @@
 # Weather App
 
-<img src = '%PUBLIC_URL%/favicon.ico'>
+<img src='./public/sample.png' />
 
 Simple responsive weather app made possible with create-react-app, and OpenWeatherMap's API. An internet connection is needed to connect with the API / load background images.
 
