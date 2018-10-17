@@ -1,6 +1,6 @@
-# Weather App
+# [Weather App](https://react-weather-app-jul2018.herokuapp.com/)
 
-<img src='./public/sample.png' />
+![Fetching the weather using New York, US as an example](/public/sample.png)
 
 Simple responsive weather app made possible with create-react-app, and OpenWeatherMap's API. An internet connection is needed to connect with the API / load background images.
 
